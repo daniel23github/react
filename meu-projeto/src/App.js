@@ -1,15 +1,13 @@
 import logo from './logo.svg';
 import './App.css'
-import Condicional from './components/Condicional';
+import HelloWorld from './components/HelloWorld';
 
 function App() {
-
-  const nome = 'Daniel'
 
   return (
     <div className="App">
       <h1>Renderização Condicional</h1>
-      <Condicional />
+      <HelloWorld />
     </div>
   );
 }

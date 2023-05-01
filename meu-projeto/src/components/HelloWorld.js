@@ -1,13 +1,14 @@
-import Frase from './Frase'
+import Frase from "./Frase"
 
 function HelloWorld() {
 
     return (
         <div>
-            <Frase/>
-            <h1>Meu primeiro componente</h1>
+            <h1>Olá Mundo!</h1>
+            <Frase frase="Bom dia!" />
         </div>
     )
+
 }
 
 export default HelloWorld
