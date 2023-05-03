@@ -1,19 +1,25 @@
-import logo from './logo.svg';
-import './App.css'
-import {useState} from 'react'
-import SeuNome from './components/setNome';
-import Saudacao from './components/Saudacao';
+import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom'
+import Footer from './components/layout/Footer';
+import Navbar from './components/Navbar';
+import Contato from './pages/Contato';
+import Empresa from './pages/Empresa';
+import Home from './pages/Home';
+
 
 function App() {
-  const [nome, setNome] = useState()
 
   return (
-    <div className="App">
-      <h1>Renderização de Listas</h1>
-      <SeuNome setNome={setNome} />
-      <Saudacao nome={nome}/>   
-    </div>
-  );
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route exact path="/empresa" element={<Empresa />} />
+        <Route exact path="/contato" element={<Contato />} />
+      </Routes>
+      <Footer />
+    </Router>
+  )
+
 }
 
 export default App;
