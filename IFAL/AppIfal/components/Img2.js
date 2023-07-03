@@ -4,7 +4,7 @@ function Img2(props) {
     return (
         <div>
             <p>Essa é uma imagem de {props.tipo}</p>
-            <img src={props.src}></img>
+            <img src={props.src}/>
         </div>
     )
 }

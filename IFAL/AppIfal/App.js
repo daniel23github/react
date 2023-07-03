@@ -5,7 +5,7 @@ import Img2 from './components/Img2'
 export default function App() {
   return (
     <View style={styles.container}>
-      <Img2 src='https://th.bing.com/th/id/OIP.OKA8iuxLlUoHgLvV8ueJ9QHaE8?pid=ImgDet&rs=1' tipo='gato'></Img2>
+      <Img2 src='https://th.bing.com/th/id/OIP.OKA8iuxLlUoHgLvV8ueJ9QHaE8?pid=ImgDet&rs=1' tipo='gato'/>
       <StatusBar style="auto" />
     </View>
   );
